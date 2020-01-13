@@ -1,7 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "outDir": "./out-tsc/spec",
+    // Set the module format to "commonjs":
+    "module": "commonjs",
     "types": [
       "jasmine",
       "node"
